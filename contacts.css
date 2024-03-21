@@ -1,0 +1,364 @@
+body, html {
+    margin: 10px;
+    font-family: tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./images/bg5.png)no-repeat center center fixed ;
+    background-size: cover;
+}
+#header{
+    line-height: 1.5rem;
+}
+#header .p1{
+    color: white;
+    font-size: 15px;
+}
+#header .p2{
+    font-size: 30px;
+}
+
+#social{
+    margin-top: 50px;
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    font-size: 10.9px;
+}
+
+#social img{
+    margin-top: 20px;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    transition: ease 5.s;
+    cursor: pointer;
+}
+#social img:hover {
+    transform: scale(1.1);
+    filter: invert(15%) sepia(86%) saturate(6500%) hue-rotate(120deg) brightness(110%) contrast(90%);
+}
+
+
+#phone{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    margin-left: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#buttons{
+    margin-top: 30px;
+}
+button{
+    background: transparent;
+    border: none;
+    transition:ease 5.s;
+}
+button:hover{
+    color: green;
+    transform: scale(1.2);
+    text-decoration: overline;
+}
+
+#ftr{
+    margin-top: 650px;
+    font-size: 10px;
+}
+
+
+/* mobile - medium */
+@media only screen and (min-width: 321px) and (max-width: 375px){
+    body, html {
+        display: flex;
+    }
+    #header{
+        line-height: 1.6rem;
+    }
+    #header .p1{
+        font-size: 20px;
+    }
+    #header .p2{
+        font-size: 40px;
+    }
+    
+    #social{
+        font-size: 10.9px;
+    }
+    
+    #social img{
+        width: 40px;
+        height: 40px;
+    }
+    #phone{
+        margin-top: 20px;
+        width: fit-content;
+        margin-left: 30px;
+        font-size: 13px;
+    }
+    #buttons{
+        margin-top: 30px;
+    }    
+    #ftr{
+        margin-top: 650px;
+        font-size: 10px;
+    }   
+}
+/* mobile - large */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    body, html {
+        display: flex;
+    }
+    #header{
+        line-height: 1.6rem;
+    }
+    #header .p1{
+        font-size: 20px;
+    }
+    #header .p2{
+        font-size: 40px;
+    }
+    
+    #social{
+        font-size: 10.9px;
+    }
+    
+    #social img{
+        width: 40px;
+        height: 40px;
+    }
+    #phone{
+        margin-top: 20px;
+        width: fit-content;
+        margin-left: 30px;
+        font-size: 13px;
+    }
+    #buttons{
+        margin-top: 30px;
+    }    
+    #ftr{
+        margin-top: 650px;
+        font-size: 13px;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    body, html {
+        display: flex;
+    }
+    #header{
+        line-height: 1.7rem;
+    }
+    #header .p1{
+        font-size: 20px;
+    }
+    #header .p2{
+        font-size: 40px;
+    }
+    
+    #social{
+        font-size: 10.9px;
+        margin-top: 130px;
+    }
+    
+    #social img{
+        width: 80px;
+        height: 80px;
+    }
+    #phone{
+        margin-top: 20px;
+        width: fit-content;
+        margin-left: 120px;
+        font-size: 13px;
+    }
+    #buttons{
+        margin-top: 30px;
+        font-size: 20px;
+    }    
+    #ftr{
+        margin-top: 550px;
+        font-size: 15px;
+    }
+}
+/* laptop - large */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body, html{
+        line-height: 1.6rem;
+        margin-top: 15px;
+    }
+    #header{
+        line-height: 2.2rem;
+    }
+    #header .p1{
+        color: white;
+        font-size: 20px;
+    }
+    #header .p2{
+        font-size: 45px;
+    }
+    
+    #social{
+        margin-top: 50px;
+        border: 2px solid gray;
+        background-color: white;
+        border-radius: 30px;
+        padding: 3px 50px 0 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #social img{
+        margin-top: 20px;
+        background-size: contain;
+        width: 70px;
+        height: 70px;
+        transition: ease 5.s;
+        cursor: pointer;
+    }
+    
+    #phone{
+        margin-top: 30px;
+        background-color: black;
+        font-size: 20px;
+        color: white;
+        width: fit-content;
+        align-items: center;
+        margin-left: 70px;
+    }
+    
+    #buttons{
+        margin-top: 5px;
+        font-size: 100px;
+    }
+    button{
+        font-size: 15px;
+    }
+    
+    #ftr{
+        margin-top: 250px;
+        font-size: 10.5px;
+    }
+}
+/* laptop - large */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body, html{
+        line-height: 1.6rem;
+        margin-top: 20px;
+    }
+    #header{
+        line-height: 2.4rem;
+    }
+    #header .p1{
+        color: white;
+        font-size: 30px;
+    }
+    #header .p2{
+        font-size: 55px;
+    }
+    
+    #social{
+        margin-top: 50px;
+        border: 2px solid gray;
+        background-color: white;
+        border-radius: 30px;
+        padding: 3px 50px 0 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #social img{
+        margin-top: 20px;
+        background-size: contain;
+        width: 70px;
+        height: 70px;
+        transition: ease 5.s;
+        cursor: pointer;
+    }
+    
+    #phone{
+        margin-top: 30px;
+        background-color: black;
+        font-size: 20px;
+        color: white;
+        width: fit-content;
+        align-items: center;
+        margin-left: 70px;
+    }
+    
+    #buttons{
+        margin-top: 5px;
+        font-size: 100px;
+    }
+    button{
+        font-size: 15px;
+    }
+    
+    #ftr{
+        margin-top: 200px;
+        font-size: 10.5px;
+    }
+}
+/* 4K */
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    body, html{
+        line-height: 1.6rem;
+        margin-top: 20px;
+    }
+    #header{
+        line-height: 2.4rem;
+    }
+    #header .p1{
+        color: white;
+        font-size: 30px;
+    }
+    #header .p2{
+        font-size: 55px;
+    }
+    
+    #social{
+        margin-top: 50px;
+        border: 2px solid gray;
+        background-color: white;
+        border-radius: 30px;
+        padding: 3px 50px 0 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    #social img{
+        margin-top: 20px;
+        background-size: contain;
+        width: 70px;
+        height: 70px;
+        transition: ease 5.s;
+        cursor: pointer;
+    }
+    
+    #phone{
+        margin-top: 30px;
+        background-color: black;
+        font-size: 20px;
+        color: white;
+        width: fit-content;
+        align-items: center;
+        margin-left: 70px;
+    }
+    
+    #buttons{
+        margin-top: 5px;
+        font-size: 100px;
+    }
+    button{
+        font-size: 15px;
+    }
+    
+    #ftr{
+        margin-top: 200px;
+        font-size: 10.5px;
+    }
+}

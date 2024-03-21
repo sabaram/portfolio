@@ -1,0 +1,385 @@
+body, #container{
+    margin: 0;
+    font-family: tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: url(./images/bg3.png) no-repeat center center fixed;
+    background-size: cover;
+}
+h1{
+    margin-top: 15px;
+    line-height: 1.5rem;
+}
+h1 .p1{
+    color: #555;
+    font-size: 15px;
+}
+h1 .p2{
+    color: black;
+    font-size: 30px;
+}
+#frnt{
+    margin: 15px;
+    border: 2px solid gray;
+    background-color: white;
+    padding: 5px 30px 0 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+.front #p1{
+    font-size: 20px;
+    color: #555;
+}
+#one{
+    align-items: center;
+    border: transparent;
+    line-height: 0rem;
+}
+#one img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 55px;
+}
+#one #p2{
+    display: flex;
+    margin-top: -15px;
+    margin-left: 90px;
+}
+#one .b2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 91px;
+    font-weight: normal;
+    font-size: 17px;
+}
+#two{
+    align-items: center;
+    border: transparent;
+    line-height: 0rem;
+}
+#two img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 55px;
+}
+#two #p3{
+    display: flex;
+    margin-top: -15px;
+    margin-left: 90px;
+}
+#two .b3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 91px;
+    font-weight: normal;
+    font-size: 17px;
+}
+#three{
+    align-items: center;
+    border: transparent;
+    line-height: 0rem;
+}
+#three img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 55px;
+}
+#three #p4{
+    display: flex;
+    margin-top: -15px;
+    margin-left: 90px;
+}
+#three .b4{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 91px;
+    font-weight: normal;
+    font-size: 17px;
+}
+#bck{
+    margin: 15px;
+    border: 2px solid gray;
+    background-color: white;
+    padding: 10px 30px 0 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+.back #p1{
+    font-size: 20px;
+    color: #555;
+}
+#four{
+    align-items: center;
+    border: transparent;
+    line-height: 0rem;
+}
+#four img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 15px 0 0 55px;
+}
+#four #p2{
+    display: flex;
+    margin-top: -15px;
+    margin-left: 90px;
+}
+#four .d2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 91px;
+    font-weight: normal;
+    font-size: 17px;
+}
+#five{
+    align-items: center;
+    border: transparent;
+    line-height: 0rem;
+}
+#five img{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 55px;
+}
+#five #p3{
+    display: flex;
+    margin-top: -15px;
+    margin-left: 90px;
+}
+#five .d3{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 91px;
+    font-weight: normal;
+    font-size: 17px;
+}
+#exp{
+    text-align: center;
+    margin: 10px 30px 30px 30px;
+    color: rgb(90, 89, 89);
+}
+
+/* mobile - medium */
+@media only screen and (min-width: 321px) and (max-width: 375px){
+    body, #container{
+        display: flex;
+    }
+    h1{
+        line-height: 1.6rem;
+    }
+    h1 .p1{
+        font-size: 20px;
+    }
+    h1 .p2{
+        font-size: 40px;
+    }
+    .front #p1{
+        font-size: 20px;
+    }
+    #one img{
+        width: 30px;
+        height: 30px;
+    }
+    #two img{
+        width: 30px;
+        height: 30px;
+    }
+    #three img{
+        width: 30px;
+        height: 30px;
+    }
+    .back #p1{
+        font-size: 20px;
+    }
+    #four img{
+        width: 30px;
+        height: 30px;
+    }
+    #five img{
+        width: 30px;
+        height: 30px;
+    }
+}
+/* mobile - large */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    body, #container{
+        display: flex;
+    }
+    h1{
+        line-height: 1.6rem;
+    }
+    h1 .p1{
+        font-size: 20px;
+    }
+    h1 .p2{
+        font-size: 40px;
+    }
+    .front #p1{
+        font-size: 20px;
+    }
+    #one img{
+        width: 30px;
+        height: 30px;
+    }
+    #two img{
+        width: 30px;
+        height: 30px;
+    }
+    #three img{
+        width: 30px;
+        height: 30px;
+    }
+    .back #p1{
+        font-size: 20px;
+    }
+    #four img{
+        width: 30px;
+        height: 30px;
+    }
+    #five img{
+        width: 30px;
+        height: 30px;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    body, #container{
+        display: flex;
+    }
+    h1{
+        line-height: 1.7rem;
+    }
+    h1 .p1{
+        font-size: 20px;
+    }
+    h1 .p2{
+        font-size: 40px;
+    }
+    .front #p1{
+        font-size: 20px;
+    }
+    #one img{
+        width: 30px;
+        height: 30px;
+    }
+    #two img{
+        width: 30px;
+        height: 30px;
+    }
+    #three img{
+        width: 30px;
+        height: 30px;
+    }
+    .back #p1{
+        font-size: 20px;
+    }
+    #four img{
+        width: 30px;
+        height: 30px;
+    }
+    #five img{
+        width: 30px;
+        height: 30px;
+    }
+    #exp{
+        line-height: 1.7rem;
+        font-size: 20px;
+    }
+}
+/* laptop - large */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body, #container{
+        display: flex;
+    }
+    h1{
+        line-height: 2.2rem;
+    }
+    h1 .p1{
+        font-size: 20px;
+    }
+    h1 .p2{
+        font-size: 45px;
+    }
+    #frnt{
+        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+        margin-right: 350px;
+    }
+    #bck{
+        width: 250px;
+        height: 250px;
+        margin-left: 350px;
+        margin-top: -274px;
+    }
+    #exp{
+        font-size: 16.3px;
+    }
+}
+/* laptop - large */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body, #container{
+        display: flex;
+    }
+    h1{
+        line-height: 2.4rem;
+    }
+    h1 .p1{
+        font-size: 30px;
+    }
+    h1 .p2{
+        font-size: 55px;
+    }
+    #frnt{
+        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+        margin-right: 350px;
+    }
+    #bck{
+        width: 250px;
+        height: 250px;
+        margin-left: 350px;
+        margin-top: -274px;
+    }
+    #exp{
+        font-size: 16.3px;
+    }
+}
+
+/* 4K */
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    body, #container{
+        display: flex;
+    }
+    h1{
+        line-height: 2.4rem;
+    }
+    h1 .p1{
+        font-size: 30px;
+    }
+    h1 .p2{
+        font-size: 55px;
+    }
+    #frnt{
+        margin-top: 20px;
+        width: 250px;
+        height: 250px;
+        margin-right: 350px;
+    }
+    #bck{
+        width: 250px;
+        height: 250px;
+        margin-left: 350px;
+        margin-top: -274px;
+    }
+    #exp{
+        font-size: 16.3px;
+    }
+}

@@ -1,0 +1,605 @@
+body, #container{
+    margin: 15px;
+    font-family: tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.9rem;
+    background: url(./images/bg1.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#menu #homeBtn { 
+    color: green;
+    text-decoration: overline;
+}
+.logo {
+    display: flex;
+    text-align: left;
+    margin-right: 240px; 
+    margin-top: -5px; 
+}
+
+.logo img {
+    width: 40px;
+    height: 30px;
+}
+
+#buttons {
+    display: none;
+}
+
+#menu {
+    display: none;
+    position: fixed;
+    border: 1px solid gray;
+    border-radius: 10px;
+    top: 20;
+    left: 180;
+    width: auto; 
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1000; 
+    overflow-y: auto; 
+    padding: 5px; 
+}
+
+#menu.show-menu {
+    display: block;
+    margin-left: 70px;
+}
+
+#menu-toggle {
+    display: block;
+    cursor: default;
+    z-index: 1001; 
+}
+
+#menu-toggle img {
+    display: flex;
+    width: 30px;
+    margin-left: 240px;
+    margin-top: -33px;
+}
+
+#menu button {
+    display: block;
+    width: 100px; 
+    border: none;
+    cursor: default;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: right;
+    color: black;
+    background-color: transparent; 
+    transition: color 0.3s ease;
+}
+
+#menu button:hover {
+    color: green;
+}
+
+.close-btn {
+    background: white;
+    border: none;
+    cursor: default;
+    padding: 5px;
+}
+.close-btn img {
+    width: 10px;
+    float: right;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    transition: ease 5.s;
+
+}
+button:hover {
+    color: green;
+    text-decoration: overline;
+}
+
+#greetings{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    background: url(./images/profile1.png) no-repeat;
+    background-size: contain;
+    height: 300px;
+    width: 200px;
+}
+h1 {
+    margin-top: -10px;
+    line-height: 1.3rem;
+}
+h1 #span1{
+    font-size: 15px;
+    color: rgb(65, 66, 66);
+}
+h1 #span2{
+    font-size: 30px;
+}
+h1 #span3{
+    font-size: 15px;
+    color: rgb(65, 66, 66); 
+}
+#b2{
+    margin-top: -5px;
+}
+.download-CV {
+    border: 2px solid gray;
+    background-color: white;
+    color:black ;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 115px;
+    height: 40px;
+}
+.download-CV:hover {
+    background-color: green;
+    text-decoration: none;
+    color:  white ;
+}
+.buttonInfo{
+    border: 2px solid gray;
+    background-color: gray;
+    color:white ;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 115px;
+    height: 40px;
+}
+
+.buttonInfo:hover {
+    background-color: green;
+    text-decoration: none;
+    color: white;
+}
+#qr {
+    display: flex;
+    margin-left: 10px;
+    background: url(./images/githubQR.png) no-repeat;
+    background-size: contain;
+    margin-top: -20px;
+    height: 100px;
+    width: 100px;
+}
+
+
+/* mobile - medium */
+@media only screen and (min-width: 321px) and (max-width: 375px){
+    body, #container{
+        display: flex;
+    }
+    .logo {
+        display: flex;
+    }
+    
+    .logo img {
+        margin-right: 40px;
+        width: 50px;
+        height: 40px;
+    }  
+    #menu button {
+        width: 130px; 
+        font-size: 25px;
+    }
+    #menu-toggle img {
+        margin-right: -40px;
+        display: flex;
+        width: 40px;
+        margin-top: -40px;
+    }
+    .close-btn img {
+        width: 15px;
+        float: right;
+    }
+    #greetings{
+        height: 400px;
+        width: 300px;
+    }
+    h1 {
+        margin-top: 10px;
+        line-height: 1.5rem;
+    }
+    h1 #span1{
+        font-size: 20px;
+    }
+    h1 #span2{
+        font-size: 40px;
+    }
+    h1 #span3{
+        font-size: 20px;
+    }
+    #b2{
+        margin-top: -5px;
+    }
+    .download-CV {
+        width: 115px;
+        height: 40px;
+    }
+    .buttonInfo{
+        font-size: 15px;
+        width: 115px;
+        height: 40px;
+    }
+    #qr {
+        display: flex;
+        margin-top: -20px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+
+/* mobile - large */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    body, #container{
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+    }
+    
+    .logo img {
+        margin-right: 90px;
+        width: 50px;
+        height: 40px;
+    }
+    #menu button {
+        width: 130px; 
+        font-size: 25px;
+    }
+    #menu.show-menu {
+        margin-left: 130px;
+    }
+    #menu-toggle img {
+        display: flex;
+        width: 40px;
+        margin-left: 330px;
+        margin-top: -40px;
+    }
+    .close-btn img {
+        width: 20px;
+        float: right;
+    }
+    #greetings{
+        height: 450px;
+        width: 350px;
+    }
+    h1 {
+        margin-top: 20px;
+        line-height: 2rem;
+    }
+    h1 #span1{
+        font-size: 25px;
+    }
+    h1 #span2{
+        font-size: 45px;
+    }
+    h1 #span3{
+        font-size: 25px;
+    }
+    #b2{
+        margin-top: -5px;
+    }
+    .download-CV {
+        width: 115px;
+        height: 40px;
+    }
+    .buttonInfo{
+        font-size: 15px;
+        width: 115px;
+        height: 40px;
+    }
+    #qr {
+        display: flex;
+        margin-top: -20px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+
+/* tablet */
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    body, #container{
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+    }
+    
+    .logo img {
+        margin-right: 160px;
+        width: 50px;
+        height: 40px;
+    }
+    #menu button {
+        width: 200px; 
+        font-size: 40px;
+    }
+    #menu.show-menu {
+        margin-left: 190px;
+        margin-top: 50px;
+    }
+    #menu-toggle img {
+        display: flex;
+        width: 40px;
+        margin-left: 390px;
+        margin-top: -40px;
+    }
+    .close-btn img {
+        width: 30px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        float: right;
+    }
+    #greetings{
+        height: 500px;
+        width: 400px;
+        margin-left: 50px;
+    }
+    h1 {
+        margin-top: 20px;
+        line-height: 2.7rem;
+    }
+    h1 #span1{
+        font-size: 30px;
+    }
+    h1 #span2{
+        font-size: 50px;
+    }
+    h1 #span3{
+        font-size: 30px;
+    }
+    #b2{
+        margin-top: -5px;
+    }
+    .download-CV {
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .buttonInfo{
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    #qr {
+        display: flex;
+        margin-top: -20px;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+/* laptop - large */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #menu-toggle{
+
+        display: none;
+    }
+    .logo {
+        float: left;
+        margin-right: 880px; 
+        margin-top: 10px;
+    }
+    .logo  img{
+        width: 60px;
+        height: 50px; 
+    }
+    #buttons {
+        display: flex;
+        margin-left: 400px;
+    }
+    
+    button {
+        margin-top: -55px;
+        margin-right: 45px;
+        font-size: 25px;
+    }
+    #greetings{
+        float: left;
+        margin-right: 300px;
+        height: 500px;
+        width: 500px;
+    }
+    h1{
+        line-height: 3rem;
+        float: right;
+        margin-left: 450px;
+        margin-top: -400px;
+    }
+    h1 #span1{
+        font-size: 50px;
+    }
+    h1 #span2{
+        font-size: 55px;
+    }
+    h1 #span3{
+        font-size: 35px;
+    }
+    #b2{
+        float: right;
+        margin-left: 500px;
+        margin-top: 1px;
+    }
+    .download-CV {
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    .buttonInfo{
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    #qr {
+        height: 150px;
+        width: 150px;
+        float: right;
+        margin-top: -5px;
+        margin-left: 480px;
+    }
+}
+
+
+/* laptop - large */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    #menu-toggle{
+
+        display: none;
+    }
+    .logo {
+        float: left;
+        margin-right: 880px; 
+        margin-top: 10px;
+    }
+    .logo  img{
+        width: 60px;
+        height: 50px; 
+    }
+    #buttons {
+        display: flex;
+        margin-left: 400px;
+    }
+    
+    button {
+        margin-top: -55px;
+        margin-right: 45px;
+        font-size: 25px;
+    }
+    #greetings{
+        float: left;
+        margin-right: 300px;
+        height: 500px;
+        width: 500px;
+    }
+    h1{
+        line-height: 3rem;
+        float: right;
+        margin-left: 450px;
+        margin-top: -400px;
+    }
+    h1 #span1{
+        font-size: 50px;
+    }
+    h1 #span2{
+        font-size: 55px;
+    }
+    h1 #span3{
+        font-size: 35px;
+    }
+    #b2{
+        float: right;
+        margin-left: 500px;
+        margin-top: 1px;
+    }
+    .download-CV {
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    .buttonInfo{
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    #qr {
+        height: 150px;
+        width: 150px;
+        float: right;
+        margin-top: -5px;
+        margin-left: 480px;
+    }
+}
+
+
+/* 4K */
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    #menu-toggle{
+
+        display: none;
+    }
+    .logo {
+        float: left;
+        margin-right: 880px; 
+        margin-top: 10px;
+    }
+    .logo  img{
+        width: 60px;
+        height: 50px; 
+    }
+    #buttons {
+        display: flex;
+        margin-left: 400px;
+    }
+    
+    button {
+        margin-top: -55px;
+        margin-right: 45px;
+        font-size: 25px;
+    }
+    #greetings{
+        float: left;
+        margin-right: 300px;
+        height: 500px;
+        width: 500px;
+    }
+    h1{
+        line-height: 3rem;
+        float: right;
+        margin-left: 450px;
+        margin-top: -400px;
+    }
+    h1 #span1{
+        font-size: 50px;
+    }
+    h1 #span2{
+        font-size: 55px;
+    }
+    h1 #span3{
+        font-size: 35px;
+    }
+    #b2{
+        float: right;
+        margin-left: 500px;
+        margin-top: 1px;
+    }
+    .download-CV {
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    .buttonInfo{
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+    #qr {
+        height: 150px;
+        width: 150px;
+        float: right;
+        margin-top: -5px;
+        margin-left: 480px;
+    }
+}

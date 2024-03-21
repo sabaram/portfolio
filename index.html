@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body id="home">
+    <div id="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+
+        <div id="buttons">
+            <button id="aboutBtn" onclick="navigateToPage('about.html')">About</button>
+            <button id="experienceBtn" onclick="navigateToPage('experience.html')">Experience</button>
+            <button id="projectsBtn" onclick="navigateToPage('projects.html')">Projects</button>
+            <button id="contactsBtn" onclick="navigateToPage('contacts.html')">Contacts</button>
+        </div>
+
+        <div id="menu-toggle" onclick="toggleMenu()">
+            <img src="./images/hambg.png" alt="Menu">
+        </div>
+
+        <div id="menu" class="menu">
+            <button class="close-btn" onclick="toggleMenu()">
+                <img src="./images/x.png" alt="Close">
+            </button>
+            <button id="homeBtn" data-url="index.html" onclick="navigateToPage(this.getAttribute('data-url'))">Home</button>
+            <button id="aboutBtnMenu" data-url="about.html" onclick="navigateToPage(this.getAttribute('data-url'))">About</button>
+            <button id="experienceBtnMenu" data-url="experience.html" onclick="navigateToPage(this.getAttribute('data-url'))">Experience</button>
+            <button id="projectsBtnMenu" data-url="projects.html" onclick="navigateToPage(this.getAttribute('data-url'))">Projects</button>
+            <button id="contactsBtnMenu" data-url="contacts.html" onclick="navigateToPage(this.getAttribute('data-url'))">Contacts</button>
+        </div>
+
+        <div id="greetings"></div>
+
+        <h1>
+            <span id="span1">Hello, I am</span><br>
+            <span id="span2">Mona Arsonillo</span><br>
+            <span id="span3">An Aspiring Web-Developer</span>
+        </h1>
+
+        <h2 id="b2">
+            <button class="download-CV" onclick="downloadCV()">Download CV</button>
+            <button class="buttonInfo" onclick="contact()">Contact Info
+                <a href="contacts.html"></a>
+            </button>
+        </h2>
+
+        <div id="qr"> </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('show-menu');
+        }
+        
+        function navigateToPage(url) {
+            window.location.href = url;
+        }
+
+        function downloadCV() {
+            var link = document.createElement('a');
+            link.href = 'arsonillo.pdf';
+            link.download = 'arsonillo.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function contact() {
+            window.location.href = 'contacts.html';
+        }
+
+        function About() {
+            window.location.href = 'about.html';
+        }
+
+        function Experience() {
+            window.location.href = 'experience.html';
+        }
+
+        function Projects() {
+            window.location.href = 'projects.html';
+        }
+
+
+    </script>
+</body>
+</html>
